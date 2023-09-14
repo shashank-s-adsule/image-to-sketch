@@ -1,0 +1,2 @@
+1. https://www.kaggle.com/datasets/shamsaddin97/image-captioning-dataset-random-images
+2. https://www.kaggle.com/datasets/lprdosmil/unsplash-random-images-collection
