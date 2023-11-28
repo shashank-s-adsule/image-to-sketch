@@ -4,8 +4,8 @@ it's basic machine learning project which is used to convert any image into rela
 it was build using ___python___ and for operations on images ___OpenCV___ Framework was used. for color quantization part ___K-Means clustering___ Machine learning algorithm was used
 
 steps involed in this process:
-1. [read image [using OpenCV]](#read-image-&-grayscale-convertion)
-2. [grayscale conversion](#read-image-and-grayscale-convertion)
+1. [read image [using OpenCV]](#read-image-and-grayscale-convertion)
+2. [grayscale conversion](#read-image-&-grayscale-convertion)
 3. [edge masking](#color-quantization)
 4. [color quantization [using K Means]](#edge-masking)
 5. [noise reduction using Bilateral filter](#noise-reduction)
