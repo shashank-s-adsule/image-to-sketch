@@ -46,3 +46,4 @@ orignal image with respect to output sketch image.
 ![output image w.r.t orignal image](code/assets/process/endoutput.png)
 
 ### sample Examples  
+![examples](code/assets/output.png)
