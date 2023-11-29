@@ -10,16 +10,32 @@ steps involed in this process:
 4. [color quantization [using K Means]](#edge-masking)
 5. [noise reduction using Bilateral filter](#noise-reduction)
 6. [combining edge mask and reconstructed color image](#applying-mask-on-colored-image)
-7. write resultant image in output folder
+7. [write resultant image in output folder](#end-results)
 
 ## read image and grayscale convertion 
+firstly we read an input image using OpenCV and convert into __Grayscale image__.
 
+![orginal to gray image](code/assets/process/oggray.png)
+
+[Note: OpenCV uses BGR color schem by default] 
 ## edge masking
+
+![gray to edge image](code/assets/process/grayedge.png)
 
 ## color quantization 
 
+![orignal to recolored image](code/assets/process/ogrecolored.png)
+
 ## noise reduction 
 
+![bi-laterl filtered image](code/assets/process/recoloredfiltered.png)
+
 ## applying mask on colored image
+
+![masking on image](code/assets/process/maskingoutput.png)
+
+## end results
+
+![output image w.r.t orignal image](code/assets/process/endoutput.png)
 
 ### sample Examples  
