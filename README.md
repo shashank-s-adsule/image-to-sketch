@@ -18,7 +18,7 @@ firstly we read an input image using OpenCV and convert into __Grayscale image__
 ![orginal to gray image](code/assets/process/oggray.png)
 
 >[!Note]\
->OpenCV uses <b style="color:blue">B</b><b style="color:green">G</b><b style="color:red">R</b> color scheme by default
+>OpenCV uses BGR color scheme by default
 
 ## edge masking
 To create a sketch-type effect, we emphasize the thickness of the edges in an image.<br>to do so we extract the edges of the image.
