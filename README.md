@@ -17,7 +17,9 @@ firstly we read an input image using OpenCV and convert into __Grayscale image__
 
 ![orginal to gray image](code/assets/process/oggray.png)
 
-[Note: OpenCV uses BGR color schem by default] 
+>[!Note]\
+>OpenCV uses <b style="color:blue">B</b><b style="color:green">G</b><b style="color:red">R</b> color scheme by default
+
 ## edge masking
 To create a sketch-type effect, we emphasize the thickness of the edges in an image.<br>to do so we extract the edges of the image.
 
@@ -34,7 +36,8 @@ This would make image little blurred and reduce the sharpness to eliminate some 
 
 ![bi-laterl filtered image](code/assets/process/recoloredfiltered.png)
 
-[Note: output from this phase may look same as input but it helps in next phase while applying mask]
+>[!Note]\
+>output from this phase may look same as input but it helps in next phase while applying mask
 ## applying mask on colored image
 in the end we apply edge mask on the colored image to achive our complete sketch image.
 
