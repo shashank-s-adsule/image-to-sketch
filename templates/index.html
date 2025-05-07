@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Sketch</title>
+
+    <link rel="icon" type="image/png" href="../static/sketch_frame.png">
+
+    <!-- <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"> -->
+    <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Image to Sketch</h1>
+    </header>
+
+    <main>
+        <div id="viewbox">
+            
+            <div id="leftview">
+                <label for="image-input">
+                    <img src="../static/placeholder.jpg" alt="input image" id="upload_image"><br>
+                </label>
+                <input type="file" name="image" id="image-input" accept="image/*" hidden="true">
+    
+                <button type="submit">Upload</button>
+            </div>
+            <div id="rightview">
+                <img src="../static/placeholder.jpg" alt="output image">
+            </div>
+            
+        </div>
+        
+        <div id="infobox">
+            <h3>Instruction</h3>
+            <ol>
+                <li>select the Color Quantization value (this will define how many color are need to be selected)</li>
+                <li>Upload the image (make sure image is sharp and unblur to get more relevent image)</li>
+                <li>click on convert process </li>
+            </ol>
+            <h3>Limitation</h3>
+            <ul>
+                <li>images are needed to be sharp and unblure else it will distored image</li>
+                <li>it will convert only colored image to sktech image</li>
+            </ul>
+        </div>
+    </main>        
+
+    <footer>
+        <a href="#" target="_blank"><img src="../static/github.png" alt="Github.png"></a>
+        <a href="#" target="_blank"><img src="../static/linkedin.png" alt="Linkdin.png"></a>
+        <a href="https://leetcode.com/u/shashank-adsule/" target="_blank"><img src="../static/leetcode.png" alt="Leetcode.png"></a>
+    </footer>
+    
+</body>
+</html>
