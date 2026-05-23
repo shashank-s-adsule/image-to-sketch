@@ -3,7 +3,19 @@ it's basic machine learning project which is used to convert any image into rela
 
 it was build using ___python___ and for operations on images ___OpenCV___ Framework was used. for color quantization part ___K-Means clustering___ Machine learning algorithm was used
 
-steps involed in this process:
+## Streamlit app
+A Streamlit app is included in `streamlit_app.py` so you can upload any image and generate a sketch-style result directly in the browser.
+
+To run locally:
+
+```bash
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
+If you want to deploy this app from GitHub, push the repository to GitHub and use a hosting service like Streamlit Community Cloud. The repository should include `requirements.txt` and `streamlit_app.py`.
+
+steps involved in this process:
 1. [read image [using OpenCV]](#read-image-and-grayscale-convertion)
 2. [grayscale conversion](#read-image-and-grayscale-convertion)
 3. [edge masking](#color-quantization)
