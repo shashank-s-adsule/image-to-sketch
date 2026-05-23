@@ -3,26 +3,15 @@ it's basic machine learning project which is used to convert any image into rela
 
 it was build using ___python___ and for operations on images ___OpenCV___ Framework was used. for color quantization part ___K-Means clustering___ Machine learning algorithm was used
 
-## Streamlit app
-A Streamlit app is included in `streamlit_app.py` so you can upload any image and generate a sketch-style result directly in the browser.
-
-To run locally:
-
-```bash
-pip install -r requirements.txt
-streamlit run streamlit_app.py
-```
-
-If you want to deploy this app from GitHub, push the repository to GitHub and use a hosting service like Streamlit Community Cloud. The repository should include `requirements.txt` and `streamlit_app.py`.
-
-steps involved in this process:
-1. [read image [using OpenCV]](#read-image-and-grayscale-convertion)
-2. [grayscale conversion](#read-image-and-grayscale-convertion)
-3. [edge masking](#color-quantization)
-4. [color quantization [using K Means]](#edge-masking)
-5. [noise reduction using Bilateral filter](#noise-reduction)
-6. [combining edge mask and reconstructed color image](#applying-mask-on-colored-image)
-7. [write resultant image in output folder](#end-results)
+Steps involved in this process:
+1. [Read image [using OpenCV]](#read-image-and-grayscale-convertion)
+2. [Grayscale conversion](#read-image-and-grayscale-convertion)
+3. [Edge masking](#color-quantization)
+4. [Color quantization [using K Means]](#edge-masking)
+5. [Noise reduction using Bilateral filter](#noise-reduction)
+6. [Combining edge mask and reconstructed color image](#applying-mask-on-colored-image)
+7. [Write resultant image in output folder](#end-results)
+8. [Sample Examples](#sample-examples)
 
 ## read image and grayscale convertion 
 firstly we read an input image using OpenCV and convert into __Grayscale image__.
@@ -62,3 +51,23 @@ orignal image with respect to output sketch image.
 
 ### sample Examples  
 ![examples](code/assets/output.png)
+
+
+### Web Interface (Streamlit)
+This project also includes an interactive web application built with Streamlit that allows users to upload their own images and generate sketch-style outputs in real time.
+
+#### Features
+- Upload images directly from your device
+- Real-time sketch generation
+- Adjustable image processing pipeline
+- Simple and responsive UI
+
+**Try the Web App:** [image-to-sketch-2599.streamlit.app](https://image-to-sketch-2599.streamlit.app/)
+
+#### Preview
+![Web Interface](code/assets/Web_Interface_preview.png)
+
+#### Run Locally
+```bash
+streamlit run image_to_sketch_app.py
+```
