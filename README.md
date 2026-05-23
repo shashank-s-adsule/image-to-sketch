@@ -12,6 +12,7 @@ Steps involved in this process:
 6. [Combining edge mask and reconstructed color image](#applying-mask-on-colored-image)
 7. [Write resultant image in output folder](#end-results)
 8. [Sample Examples](#sample-examples)
+9. [Web Interface (Streamlit)](#web-interface-streamlit)
 
 ## read image and grayscale convertion 
 firstly we read an input image using OpenCV and convert into __Grayscale image__.
